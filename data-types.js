@@ -42,3 +42,59 @@ console.log(lightOn == lightOff); // false
 //? Objects
 //? Arrays
 
+let nums = [1, "prototurk", 3]; //! Array
+
+console.log(nums); // [1, 'prototurk', 3]
+
+nums[1] = 2;
+
+console.log(nums); // [1, 2, 3]
+
+let nums1 = [1, 2, 3];
+let nums2 = [1, 2, 3];
+
+console.log(nums1 == nums2); // false
+
+let userOne = {
+  name: "Asabeneh",
+  role: "teaching",
+  country: "Finland",
+};
+
+let userTwo = {
+  name: "Asabeneh",
+  role: "teaching",
+  country: "Finland",
+};
+
+console.log(userOne == userTwo); // false
+
+let user1 = {
+  name: "Tayfun",
+  surname: "Erbilen",
+};
+
+let user2 = {
+  name: "Tayfun",
+  surname: "Erbilen",
+};
+
+console.log(user1 == user2); // false
+
+let nums0 = [1, 2, 3];
+let numbers = nums0;
+
+console.log(nums0 == numbers); // true
+
+let userOne1 = {
+  name: "Asabeneh",
+  role: "teaching",
+  country: "Finland",
+};
+
+let userTwo2 = userOne1;
+
+console.log(userOne1 == userTwo2); // true
+
+
+//! Numbers
