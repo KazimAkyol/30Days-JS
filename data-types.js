@@ -96,5 +96,34 @@ let userTwo2 = userOne1;
 
 console.log(userOne1 == userTwo2); // true
 
-
 //! Numbers
+
+//* Declaring Number Data Types
+
+let age = 35;
+const gravity = 9.81; // we use const for non-changing values, gravitational constant in m/s2
+let mass = 72; // mass in Kilogram
+// const PI = 3.14; // pi a geometrical constant
+const boilingPoint = 100; // temperature in oC, boiling point of water which is a constant
+const bodyTemp = 37; // oC average human body temperature, which is a constant
+
+console.log(age, gravity, mass, boilingPoint, bodyTemp);
+
+//* Math Object
+
+const PI = Math.PI;
+
+console.log(PI); // 3.141592653589793
+
+console.log(Math.round(5.5)); // 6
+console.log(Math.ceil(5.49)); // 6
+console.log(Math.floor(5.49)); // 5
+console.log(Math.min(3, 5, 1, -5, -37)); // -37
+console.log(Math.max(3, 5, 1, -5, -37)); // 5
+console.log(Math.random()); // rastgele sayi veriyor
+
+// let us create random number between 0 to 10
+
+const num = Math.floor(Math.random() * 11); // creates random number between 0 nd 10
+console.log(num);
+
