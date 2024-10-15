@@ -127,3 +127,69 @@ console.log(Math.random()); // rastgele sayi veriyor
 const num = Math.floor(Math.random() * 11); // creates random number between 0 nd 10
 console.log(num);
 
+// Absolut value
+console.log(Math.abs(-10)); // 10
+
+// Square root
+console.log(Math.sqrt(441)); // 21
+console.log(Math.sqrt(169)); // 13
+
+//Power
+console.log(Math.pow(5, 4)); // 625
+
+let randomNum = Math.random(); // generates 0 to 0.99
+let numBtnZeroAndTen = randomNum * 11;
+
+console.log(numBtnZeroAndTen); // this gives: min 0 and max 10.99
+
+let randomNumRoundToFloor = Math.floor(numBtnZeroAndTen);
+console.log(randomNumRoundToFloor); // this gives between 0 and 10
+
+//! Strings
+//* Strings tek tirnak, cift tirnak, backtick arasinda olur.
+
+let space = "";
+let firstName = "M.Kerem";
+let lastName = "Aktürkoglu";
+let country = "Türkiye";
+let city = "Istanbul";
+let language = "Javascript";
+let job = "football-player";
+let quote = "Thats the football, its the football";
+
+console.log(space, firstName, lastName, country, city, language, job, quote);
+
+//* String Concatenation
+//* Birden fazla string'leri birlestirmeye yarar.
+
+let name = "Hakan";
+let surname = "Sükür";
+
+let fullName = name + " " + surname;
+console.log(fullName); // Hakan Sükür
+
+//* String'lerde Kacis (Escape) Dizeleri
+
+// \n: new line
+// \t: Tab, means 8 spaces
+// \\: Back slash
+// \': Single quote(')
+// \'': Double quote('')
+
+let paragragh = "benim\nadim\nkazim\nakyol";
+console.log(paragragh);
+
+//* Template Strings (``) (Backtick)
+
+//Syntax
+// `String literal text`
+// `String literal text ${expression}`
+
+let fullName1 = `${name} ${surname}`;
+console.log(fullName1); // Hakan Sükür
+
+let a = 2;
+let b = 3;
+console.log(`${a} is greater than ${b}: ${a > b}`); // 2 is greater than 3 : false
+
+//! String Methods
