@@ -193,3 +193,28 @@ let b = 3;
 console.log(`${a} is greater than ${b}: ${a > b}`); // 2 is greater than 3 : false
 
 //! String Methods
+
+//* Everything in JavaScript is an object.
+
+//? 1.lenght: uzunluk
+
+let youtube = "prototurk";
+console.log(youtube.length); // 9 karakter
+
+//? 2.Bir dize içindeki karakterlere erişme: Bir dizedeki her karaktere indeksini kullanarak erişebiliriz. Programlamada sayma 0'dan başlar. Dizenin ilk indeksi sıfırdır ve son indeks dizenin uzunluğu eksi birdir.
+
+let lastIndex = youtube.length - 1;
+console.log(youtube[lastIndex]); // k
+
+//? 3.toUpperCase(): this method changes the string to uppercase letters. (büyük harfe cevirir)
+
+let dizi = "prototurk";
+console.log(dizi.toUpperCase()); // PROTOTURK
+
+let string = "JavaScript";
+console.log(string.toUpperCase()); // JAVASCRIPT
+
+let country0 = "Deutschland";
+console.log(country0.toUpperCase()); // DEUTSCHLAND
+
+
