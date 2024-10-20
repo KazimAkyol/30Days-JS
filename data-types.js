@@ -217,4 +217,23 @@ console.log(string.toUpperCase()); // JAVASCRIPT
 let country0 = "Deutschland";
 console.log(country0.toUpperCase()); // DEUTSCHLAND
 
+//? 4.toLowerCase(): this method changes the string to lowercase letters. (kücük harfe cevirir)
 
+let dizi0 = "AKADEMI";
+console.log(dizi0.toLowerCase()); // akademi
+
+let string0 = "JAVASCRIPT";
+console.log(string0.toLowerCase()); // javascript
+
+let country1 = "UNITED STATES OF AMERICA";
+console.log(country1.toLowerCase()); // united states of america
+
+//? 5.substr(): Başlangıç dizini ve dilimlenecek karakter sayısı olmak üzere iki bağımsız değişken alır.
+
+let neu = "TypeScript";
+console.log(neu.substr(4, 6)); // Script
+
+let team = "ManchesterCity";
+console.log(team.substr(10, 4)); // City
+
+//? 6.substring(): 
