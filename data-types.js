@@ -354,4 +354,48 @@ let string13 =
 console.log(string13.search("love")); // 2
 console.log(string13.search(/javascript/gi)); // 7, Regex konusuna deginilecek
 
-//? 19.match(): Argüman olarak bir alt dize veya düzenli ifade kalıbı alır ve eşleşme varsa bir dizi döndürür, yoksa null döndürür. Bir düzenli ifade kalıbının nasıl göründüğünü görelim. işareti ile başlar ve / işareti ile biter
+//? 19.match(): Argüman olarak bir alt dize veya düzenli ifade kalıbı alır ve eşleşme varsa bir dizi döndürür, yoksa null döndürür. Bir düzenli ifade kalıbının nasıl göründüğünü görelim. işareti ile başlar ve / işareti ile biter.
+
+// syntax => string.match(substring)
+
+let string14 =
+  "I love JavaScript. If you do not love JavaScript what else can you love.";
+
+console.log(string14.match("love")); // ["love", index: 2, input: "I love JavaScript. If you do not love JavaScript what else can you love.", groups: undefined]
+
+let pattern = /love/gi;
+console.log(string14.match(pattern)); // ['love', 'love', 'love']
+
+let txt =
+  "In 2019, I ran 30 Days of Pyhton. Now, in 2020 I am super exited to start this challenge.";
+let regEx = /\d+/;
+
+// kaçış karakterli d, d'nin normal bir d olmadığı, bunun yerine bir rakam olduğu anlamına gelir,
+// + bir veya daha fazla basamaklı sayı anlamına gelir,
+// ondan sonra g varsa küresel anlamına gelir, her yerde arayın.
+
+console.log(txt.match(regEx)); // ["2", "0", "1", "9", "3", "0", "2", "0", "2", "0"]
+console.log(txt.match(/\d+/)); // ["2019", "30", "2020"]
+
+//? 20.repeat(): Argüman olarak bir sayı alır ve dizenin tekrarlanan versiyonunu döndürür.
+
+// string.repeat(n);
+
+let string15 = "love";
+console.log(string15.repeat(10)); // lovelovelovelovelovelovelovelovelovelove
+
+//! Changing Data Type(Casting)
+
+//* Casting: Bir veri tipini başka bir veri tipine dönüştürme.   ParseInt(),                                                   parseFloat(),                                                     Number(),                                                             + işareti,                                                           str() aritmetik işlemler yaptığımızda string sayılar önce integer veya float'a dönüştürülmelidir, dönüştürülmezse hata verir.
+
+let num3 = "10";
+let numInt = parseInt(num3);
+console.log(numInt); // 10
+
+let num4 = "71";
+let numInt0 = Number(num4);
+console.log(numInt0); // 71
+
+let num5 = "34";
+let numInt1 = +num5;
+console.log(numInt1); // 34
