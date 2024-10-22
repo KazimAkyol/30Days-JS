@@ -315,3 +315,43 @@ console.log(country2.concat("land")); // England
 //? 16.startsWith(): Argüman olarak bir alt dize alır ve dizenin belirtilen alt dize ile başlayıp başlamadığını kontrol eder. Bir Boolean (doğru veya yanlış) döndürür.
 
 //syntax => string.startsWith(substring)
+
+let string11 = "Love is the best to in this world";
+
+console.log(string11.startsWith("Love")); // true
+console.log(string11.startsWith("love")); // false
+console.log(string11.startsWith("world")); // false
+
+let country3 = "Finland";
+
+console.log(country3.startsWith("Fin")); // true
+console.log(country3.startsWith("fin")); // false
+console.log(country3.startsWith("land")); //  false
+
+//? 17.endsWith(): Argüman olarak bir alt dize alır ve dizenin belirtilen alt dize ile bitip bitmediğini kontrol eder. Bir Boolean (doğru veya yanlış) döndürür.
+
+// string.endsWith(substring)
+
+let string12 = "Love is the most powerful feeling in the world";
+
+console.log(string12.endsWith("world")); // true
+console.log(string12.endsWith("love")); // false
+console.log(string12.endsWith("in the world")); // true
+
+let country4 = "Finland";
+
+console.log(country4.endsWith("land")); // true
+console.log(country4.endsWith("fin")); // false
+console.log(country4.endsWith("Fin")); //  false
+
+//? 18.search(): Bağımsız değişken olarak bir alt dize alır ve ilk eşleşmenin dizinini döndürür. Arama değeri bir dize veya düzenli ifade deseni(Regex) olabilir.
+
+// string.search(substring)
+
+let string13 =
+  "I love JavaScript. If you do not love JavaScript what else can you love";
+
+console.log(string13.search("love")); // 2
+console.log(string13.search(/javascript/gi)); // 7, Regex konusuna deginilecek
+
+//? 19.match(): Argüman olarak bir alt dize veya düzenli ifade kalıbı alır ve eşleşme varsa bir dizi döndürür, yoksa null döndürür. Bir düzenli ifade kalıbının nasıl göründüğünü görelim. işareti ile başlar ve / işareti ile biter
