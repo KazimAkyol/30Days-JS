@@ -399,3 +399,48 @@ console.log(numInt0); // 71
 let num5 = "34";
 let numInt1 = +num5;
 console.log(numInt1); // 34
+
+//! String to Float
+
+//* Dize float sayısını float sayısına dönüştürebiliriz. Tırnak içindeki herhangi bir float sayı, bir string float sayıdır. Bir string float sayı örneği: '9.81', '3.14', '1.44', vb. Aşağıdaki yöntemleri kullanarak string float'ı sayıya dönüştürebiliriz:
+
+let num6 = "9.81";
+let numFloat = parseFloat(num6);
+console.log(numFloat); // 9.81
+
+let num7 = "3.14";
+let numFloat0 = Number(num7);
+console.log(num7); // 3.14
+
+let num8 = "1.44";
+let numFloat1 = +num8;
+console.log(numFloat1); // 1.44
+
+//! Float to Int
+
+//* Float sayıları tam sayılara dönüştürebiliriz. Float'ı int'e dönüştürmek için aşağıdaki yöntemi kullanırız:
+
+parseInt();
+
+let num9 = 16.9;
+let numInt3 = parseInt(num9);
+console.log(numInt3); // 16
+
+//! Booleans
+
+//* Bir boolean veri türü iki değerden birini temsil eder: doğru veya yanlış. Boolean değeri ya doğrudur ya da yanlıştır. Bu veri türlerinin kullanımı, karşılaştırma operatörüne başladığınızda netleşecektir. Tüm karşılaştırmalar, doğru ya da yanlış olan bir boolean değeri döndürür.
+
+let isLightOn = true;
+console.log(isLightOn); // true
+
+let isRaining = false;
+console.log(isRaining); //false
+
+let isHungry = false;
+console.log(isHungry); // false
+
+let isMarried = true;
+console.log(isMarried);
+
+let trueValue = 4 > 3; // true
+let falseValue = 4 < 3; // false
