@@ -236,4 +236,82 @@ console.log(neu.substr(4, 6)); // Script
 let team = "ManchesterCity";
 console.log(team.substr(10, 4)); // City
 
-//? 6.substring(): 
+//? 6.substring(): Başlangıç indeksi ve durma indeksi olmak üzere iki argüman alır, ancak durma indeksindeki karakteri içermez.
+
+let string1 = "JavaScript";
+console.log(string1.substring(0, 4)); // Java
+console.log(string1.substring(4, 10)); // Script
+
+//? 7.split(): Split yöntemi, bir dizeyi belirtilen bir yerden böler.
+
+let string2 = "30 Days Of JavaScript";
+console.log(string2.split()); // ['30 Days Of Javascript']
+console.log(string2.split(" ")); // ['30', 'Days', 'Of', 'Javascript']
+
+//? 8.trim(): Bir dizenin başındaki veya sonundaki boşluğu kaldırır.
+
+let string3 = " 30 Days Of JavaScript ";
+console.log(string3.trim(" "));
+
+//? 9.includes(): Bir alt dize bağımsız değişkeni alır ve alt dize bağımsız değişkeninin dizede var olup olmadığını kontrol eder. includes() bir Boolean döndürür. Bir dizede bir alt dize varsa true, aksi takdirde false döndürür.
+
+let string4 = "30 Days Of JavaScript";
+console.log(string4.includes("Days")); // true
+console.log(string4.includes("days")); // false
+console.log(string4.includes("Script")); // true
+console.log(string4.includes("script")); // false
+console.log(string4.includes("java")); // false
+console.log(string4.includes("Java")); // true
+
+//? 10.replace(): Parametre olarak eski alt dizeyi ve yeni bir alt dizeyi alır.
+
+let string5 = "30 Days Of JavaScript";
+console.log(string5.replace("JavaScript", "Pyhton")); // 30 Days Of Pyhton
+
+//? 11.charAt(): İndeks alır ve o indeksteki değeri döndürür.
+
+// string.charAt(index);
+
+let string6 = "30 Days Of JavaScript";
+console.log(string6.charAt(0)); // 3
+
+//? 12.charCodeAt(): İndeks alır ve o indeksteki değerin karakter kodunu (ASCII numarası) döndürür.
+
+let string7 = "30 Days Of JavaScript";
+console.log(string7.charCodeAt(3)); // D ASCII number is 68
+
+//? 13.indexOf():Bir alt dize alır ve alt dize bir dizede mevcutsa alt dizenin ilk konumunu döndürür, mevcut değilse -1 döndürür.
+
+let string8 = "30 Days Of JavaScript";
+console.log(string8.indexOf("D")); // 3
+console.log(string8.indexOf("Days")); // 3
+console.log(string8.indexOf("days")); // -1,mevcut degil
+console.log(string8.indexOf("a")); // 4
+console.log(string8.indexOf("JavaScript")); // 11
+console.log(string8.indexOf("Script")); // 15
+console.log(string8.indexOf("script")); // -1,mevcut degil
+
+//? 14.lastIndexOf(): Bir alt dize alır ve alt dize bir dizede mevcutsa alt dizenin son konumunu döndürür, mevcut değilse -1 döndürür.
+
+//syntax => string.lastIndexOf(substring);
+
+let string9 =
+  "I love JavaScript. If you do not love JavaScript what else can you love.";
+
+console.log(string9.lastIndexOf("love")); //67
+console.log(string9.lastIndexOf("you")); // 63
+console.log(string9.lastIndexOf("JavaScript")); // 38
+
+//? 15.concat(): Birçok alt dizeyi alır ve bunları birleştirir.
+
+// string.concat(substring, substring, substring);
+
+let string10 = "30";
+console.log(string10.concat("Days", "Of", "JavaScript")); // 30DaysOfJavaScript
+
+let country2 = "Eng";
+console.log(country2.concat("land")); // England
+
+//? 16.startsWith(): Argüman olarak bir alt dize alır ve dizenin belirtilen alt dize ile başlayıp başlamadığını kontrol eder. Bir Boolean (doğru veya yanlış) döndürür.
+
+//syntax => string.startsWith(substring)
