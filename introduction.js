@@ -7,17 +7,17 @@ console.log(typeof null); // object
 console.log(typeof undefined); // undefined
 
 let youtubeChannel = "prototurk",
-  channelAge = 11,
-  isChannelStillActive = true,
-  secondChannel = null,
-  channelMoney = undefined;
+    channelAge = 11,
+    isChannelStillActive = true,
+    secondChannel = null,
+    channelMoney = undefined;
 
 console.log(
-  youtubeChannel,
-  channelAge,
-  isChannelStillActive,
-  secondChannel,
-  channelMoney
+    youtubeChannel,
+    channelAge,
+    isChannelStillActive,
+    secondChannel,
+    channelMoney
 );
 
 const PI = 3.14;

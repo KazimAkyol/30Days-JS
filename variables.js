@@ -4,10 +4,10 @@ console.log(undefined); // undefined
 console.log(null); // null
 
 let firstName = "Mauro",
-  lastName = "Icardi",
-  maritalStatus = "married",
-  country = "Argentina",
-  age = 30;
+    lastName = "Icardi",
+    maritalStatus = "married",
+    country = "Argentina",
+    age = 30;
 
 console.log(firstName, lastName, maritalStatus, country, age);
 

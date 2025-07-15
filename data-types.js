@@ -56,27 +56,27 @@ let nums2 = [1, 2, 3];
 console.log(nums1 == nums2); // false
 
 let userOne = {
-  name: "Asabeneh",
-  role: "teaching",
-  country: "Finland",
+    name: "Asabeneh",
+    role: "teaching",
+    country: "Finland",
 };
 
 let userTwo = {
-  name: "Asabeneh",
-  role: "teaching",
-  country: "Finland",
+    name: "Asabeneh",
+    role: "teaching",
+    country: "Finland",
 };
 
 console.log(userOne == userTwo); // false
 
 let user1 = {
-  name: "Tayfun",
-  surname: "Erbilen",
+    name: "Tayfun",
+    surname: "Erbilen",
 };
 
 let user2 = {
-  name: "Tayfun",
-  surname: "Erbilen",
+    name: "Tayfun",
+    surname: "Erbilen",
 };
 
 console.log(user1 == user2); // false
@@ -87,9 +87,9 @@ let numbers = nums0;
 console.log(nums0 == numbers); // true
 
 let userOne1 = {
-  name: "Asabeneh",
-  role: "teaching",
-  country: "Finland",
+    name: "Asabeneh",
+    role: "teaching",
+    country: "Finland",
 };
 
 let userTwo2 = userOne1;
@@ -296,7 +296,7 @@ console.log(string8.indexOf("script")); // -1,mevcut degil
 //syntax => string.lastIndexOf(substring);
 
 let string9 =
-  "I love JavaScript. If you do not love JavaScript what else can you love.";
+    "I love JavaScript. If you do not love JavaScript what else can you love.";
 
 console.log(string9.lastIndexOf("love")); //67
 console.log(string9.lastIndexOf("you")); // 63
@@ -349,7 +349,7 @@ console.log(country4.endsWith("Fin")); //  false
 // string.search(substring)
 
 let string13 =
-  "I love JavaScript. If you do not love JavaScript what else can you love";
+    "I love JavaScript. If you do not love JavaScript what else can you love";
 
 console.log(string13.search("love")); // 2
 console.log(string13.search(/javascript/gi)); // 7, Regex konusuna deginilecek
@@ -359,7 +359,7 @@ console.log(string13.search(/javascript/gi)); // 7, Regex konusuna deginilecek
 // syntax => string.match(substring)
 
 let string14 =
-  "I love JavaScript. If you do not love JavaScript what else can you love.";
+    "I love JavaScript. If you do not love JavaScript what else can you love.";
 
 console.log(string14.match("love")); // ["love", index: 2, input: "I love JavaScript. If you do not love JavaScript what else can you love.", groups: undefined]
 
@@ -367,7 +367,7 @@ let pattern = /love/gi;
 console.log(string14.match(pattern)); // ['love', 'love', 'love']
 
 let txt =
-  "In 2019, I ran 30 Days of Pyhton. Now, in 2020 I am super exited to start this challenge.";
+    "In 2019, I ran 30 Days of Pyhton. Now, in 2020 I am super exited to start this challenge.";
 let regEx = /\d+/;
 
 // kaçış karakterli d, d'nin normal bir d olmadığı, bunun yerine bir rakam olduğu anlamına gelir,
@@ -444,3 +444,25 @@ console.log(isMarried);
 
 let trueValue = 4 > 3; // true
 let falseValue = 4 < 3; // false
+
+//! Truthy Values
+
+//* Sıfır hariç tüm sayılar (pozitif ve negatif) doğrudur.
+//* Boş dize ('') hariç tüm dizeler doğrudur.
+//* Boolean true
+
+//! Falsy values
+
+//* 0
+//* 0n
+//* null
+//* undefined
+//* NaN
+//* the boolean false
+//* '', "", ``, empty string
+
+//! Undefined
+
+//* Eğer bir değişken bildirirsek ve bir değer atamazsak, değer tanımsız olacaktır. Buna ek olarak, eğer bir fonksiyon değer döndürmüyorsa, tanımsız olacaktır.
+
+//! Operators
